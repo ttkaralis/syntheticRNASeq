@@ -18,7 +18,7 @@ from synRNA import SingleSampleGenerator, ReplicateGenerator, MultipleSampleGene
 
 ### **Generation of a single sample**
 
-To create a single sample we will use the *SingleSampleGenerator* class and call the * *generate_single_sample* * function:
+To create a single sample we will use the *SingleSampleGenerator* class and call the *generate_single_sample* function:
 
 ```
 single_sample = SingleSampleGenerator(number_of_genes = 60_000,
@@ -30,7 +30,7 @@ single_sample = single_sample.generate_single_sample()
 
 ### **Generation of a replicates from a single sample**
 
-To create triplicates from a single sample created from the above function we will use the * *ReplicateGenerator* * class and call the * *get_sample_replicates* * function:
+To create triplicates from a single sample created from the above function we will use the *ReplicateGenerator* class and call the *get_sample_replicates* function:
 
 ```
 replicates = ReplicateGenerator(normal_distribution_sigma = 1,
@@ -41,7 +41,7 @@ replicates = replicates.get_sample_replicates()
 
 ### **Generation of multiple samples**
 
-To create multiple sample we will use the * *MultipleSampleGenerator* * class and call the * *generate_multiple_sample* * function:
+To create multiple sample we will use the *MultipleSampleGenerator* class and call the *generate_multiple_sample* function:
 
 ```
 multiple_samples = MultipleSampleGenerator(number_of_samples = 3,
@@ -50,6 +50,5 @@ multiple_samples = MultipleSampleGenerator(number_of_samples = 3,
 										   neg_binomial_p = 0.05,
 										   seed = 0)
 multiple_samples = multiple_samples.generate_multiple_sample()
-```
 
 
