@@ -18,7 +18,7 @@ from synRNA import SingleSampleGenerator, ReplicateGenerator, MultipleSampleGene
 
 ### **Generation of a single sample**
 
-To create a single sample we will use the **SingleSampleGenerator** class and call the *generate_single_sample* function:
+To create a single sample we will use the *SingleSampleGenerator* class and call the *generate_single_sample* function:
 
 ```
 single_sample = SingleSampleGenerator(number_of_genes = 60_000,
