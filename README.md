@@ -1,6 +1,6 @@
 # **synthetic-RNASeq**
 
-![image alt]([https://github.com/ttkaralis/metabolite_prediction_from_gene_expression/blob/dc080d978904a063cbe90fae17a779923931d37a](https://github.com/ttkaralis/synthetic-RNASeq/synthetic-RNASeq_logo.png)
+![image alt](https://github.com/ttkaralis/metabolite_prediction_from_gene_expression/synthetic-RNASeq_logo.png)
 
 ## **Introduction**
 synthetic-RNASeq is a python package that allows generation of synthetic RNA-Sequencing data by sampling a negative binomial distribution.
