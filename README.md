@@ -56,6 +56,7 @@ multiple_samples = MultipleSampleGenerator(number_of_samples = 3,
 										   neg_binomial_p = 0.05,
 										   seed = 0)
 multiple_samples = multiple_samples.generate_multiple_sample()
+```
 
 ## Developer guide
 
