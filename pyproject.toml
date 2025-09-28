@@ -1,35 +1,37 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "syntheticRNASeq"
-version = "0.0"
-authors = [
-  { name="Theodoros Karalis", email="ttkaralis@gmail.com" },
-]
-description = "This package can be used to generate syntheticRNASeq data by sampling a negative binomial distribution."
+version = "0.1.0"
+description = "Generate synthetic RNA-Seq data by sampling a negative binomial distribution."
 readme = "README.md"
-requires-python = ">=3.12.8"
+requires-python = ">=3.8"
+authors = [{ name = "Theodoros Karalis", email = "ttkaralis@gmail.com" }]
+license = { text = "MIT" }
 classifiers = [
-    "Programming Language :: Python :: 3",
-	"Programming Language :: Python :: 3.12",
-    "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
 ]
-license = "MIT"
-license-files = ["LICEN[CS]E*"]
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "pandas>=2.0"
+]
 
 [project.urls]
 Homepage = "https://github.com/ttkaralis/syntheticRNASeq"
-Issues = "https://github.com/ttkaralis/syntheticRNASeq"
-
-dependencies = [
-    "numpy>=1.26.4",
-    "pandas>=2.2.2",
-]
-
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
+Issues = "https://github.com/ttkaralis/syntheticRNASeq/issues"
 
 [tool.setuptools]
-packages = { find = { } }
+package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["syntheticRNASeq*"]
+
+# Optional: CLI entry point
+[project.scripts]
+syntheticrnaseq = "syntheticRNASeq.__main__:main"

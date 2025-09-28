@@ -1,0 +1,2 @@
+[console_scripts]
+syntheticrnaseq = syntheticRNASeq.__main__:main
