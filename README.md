@@ -8,10 +8,16 @@ The output of the generators are pandas data frames with genes in rows and sampl
 
 ## **Usage**
 
-Install and import the module:
+Installation (python `virtualenv` recommended):
 
 ```
-!pip install syntheticRNASeq  
+virtualenv venv
+source venv/bin/activate
+pip install syntheticRNASeq  
+```
+
+Run it:
+```
 import syntheticRNASeq as synRNA
 from synRNA import SingleSampleGenerator, ReplicateGenerator, MultipleSampleGenerator
 ```
