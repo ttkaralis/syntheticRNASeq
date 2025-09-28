@@ -1,9 +1,9 @@
-# **synthetic-RNASeq**
+# **syntheticRNASeq**
 
 ![image alt](synthetic-RNASeq_logo.png)
 
 ## **Introduction**
-synthetic-RNASeq is a python package that allows generation of synthetic RNA-Sequencing data by sampling a negative binomial distribution.
+syntheticRNASeq is a python package that allows generation of synthetic RNA-Sequencing data by sampling a negative binomial distribution.
 The output of the generators are pandas data frames with genes in rows and samples in columns.
 
 ## **Usage**
@@ -12,7 +12,7 @@ Install and import the module:
 
 ```
 !pip install synthetic-RNASeq  
-import synthetic-RNASeq as synRNA
+import syntheticRNASeq as synRNA
 from synRNA import SingleSampleGenerator, ReplicateGenerator, MultipleSampleGenerator
 ```
 
