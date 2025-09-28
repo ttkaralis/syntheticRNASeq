@@ -11,7 +11,7 @@ The output of the generators are pandas data frames with genes in rows and sampl
 Install and import the module:
 
 ```
-!pip install synthetic-RNASeq  
+!pip install syntheticRNASeq  
 import syntheticRNASeq as synRNA
 from synRNA import SingleSampleGenerator, ReplicateGenerator, MultipleSampleGenerator
 ```
