@@ -13,7 +13,7 @@ Install and import the module:
 ```
 !pip install syntheticRNASeq  
 import syntheticRNASeq as synRNA
-from syntheticRNASeq import SingleSampleGenerator, ReplicateGenerator, MultipleSampleGenerator
+from syntheticRNASeq import SingleSampleGenerator, ReplicateGenerator, MultipleSampleGenerator #If you want to import specific class
 ```
 
 ### **Generation of a single sample**
