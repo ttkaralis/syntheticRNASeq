@@ -13,7 +13,7 @@ Install and import the module:
 ```
 !pip install syntheticRNASeq  
 import syntheticRNASeq as synRNA
-from synRNA import SingleSampleGenerator, ReplicateGenerator, MultipleSampleGenerator
+from syntheticRNASeq import SingleSampleGenerator, ReplicateGenerator, MultipleSampleGenerator
 ```
 
 ### **Generation of a single sample**
@@ -34,7 +34,7 @@ To create triplicates from a single sample created from the above function we wi
 
 ```
 replicates = ReplicateGenerator(normal_distribution_sigma = 1,
-								df = single,
+								df = single_sample,
 								seed = 0)
 replicates = replicates.get_sample_replicates()
 ```
